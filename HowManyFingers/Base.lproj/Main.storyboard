@@ -30,24 +30,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1 to 5" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1pr-jL-odc">
-                                <rect key="frame" x="139" y="97" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="1 to 5" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1pr-jL-odc">
+                                <rect key="frame" x="159.5" y="97" width="56.5" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Od-sp-Wxn">
-                                <rect key="frame" x="152" y="135" width="70" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Od-sp-Wxn">
+                                <rect key="frame" x="166" y="135" width="43" height="30"/>
                                 <state key="normal" title="Guess"/>
                                 <connections>
                                     <action selector="checkGuess:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bWj-zM-svb"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tO2-cz-93A">
-                                <rect key="frame" x="16" y="176" width="343" height="33"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tO2-cz-93A">
+                                <rect key="frame" x="187.5" y="176" width="0.0" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -57,8 +54,14 @@
                         <constraints>
                             <constraint firstItem="GC9-xC-qUx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0Ps-K6-NZU"/>
                             <constraint firstItem="GC9-xC-qUx" firstAttribute="firstBaseline" secondItem="wha-lx-oKr" secondAttribute="baseline" constant="24" symbolType="layoutAnchor" id="5dZ-cK-Vw4"/>
+                            <constraint firstItem="tO2-cz-93A" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EZF-sl-sZ4"/>
+                            <constraint firstItem="1Od-sp-Wxn" firstAttribute="top" secondItem="1pr-jL-odc" secondAttribute="bottom" constant="8" id="S2W-ro-Nuy"/>
                             <constraint firstItem="wha-lx-oKr" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TJB-ci-vCE"/>
+                            <constraint firstItem="tO2-cz-93A" firstAttribute="top" secondItem="1Od-sp-Wxn" secondAttribute="bottom" constant="11" id="dtq-jD-8ux"/>
+                            <constraint firstItem="1Od-sp-Wxn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eFX-y4-rhL"/>
                             <constraint firstItem="wha-lx-oKr" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="fS0-Yr-538"/>
+                            <constraint firstItem="1pr-jL-odc" firstAttribute="top" secondItem="GC9-xC-qUx" secondAttribute="bottom" constant="9.5" id="n2u-Al-Tc2"/>
+                            <constraint firstItem="1pr-jL-odc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ycV-Nx-zrb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
