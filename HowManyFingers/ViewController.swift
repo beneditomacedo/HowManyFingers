@@ -30,6 +30,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         
         // clear textfield
         userGuess.text = ""
+        
+        // focus in textfield
+        userGuess.becomeFirstResponder()
     }
     
     override func viewDidLoad() {
