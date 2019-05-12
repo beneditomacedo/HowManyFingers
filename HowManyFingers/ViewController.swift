@@ -35,6 +35,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
         userGuess.becomeFirstResponder()
     }
     
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        self.userGuess.placeholder = nil
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.userGuess.delegate = self
