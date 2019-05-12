@@ -8,11 +8,31 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, UITextFieldDelegate {
+    let heldFingers = Int.random(in: 1 ... 5)
+    
+    @IBOutlet weak var userGuess: UITextField!
+    @IBOutlet weak var result: UILabel!
+    @IBAction func checkGuess(_ sender: Any) {
+        if let guess = userGuess.text {
+            if let guessInt = Int(guess) {
+                if guessInt == heldFingers {
+                    result.text = "Great!!! You're right"
+                } else {
+                    result.text = "You're wrong. Let's try again"
+                }
+            }
+        }
+        
+        // clear textfield
+        userGuess.text = ""
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        self.userGuess.delegate = self
+        print("heldFingers is \(heldFingers)")
+        
     }
 
 
