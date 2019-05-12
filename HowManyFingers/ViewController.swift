@@ -14,6 +14,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var userGuess: UITextField!
     @IBOutlet weak var result: UILabel!
     @IBAction func checkGuess(_ sender: Any) {
+        
+        // dismiss the keyboard
+        userGuess.resignFirstResponder()
+        
         if let guess = userGuess.text {
             if let guessInt = Int(guess) {
                 if guessInt == heldFingers {
